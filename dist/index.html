@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <style>
+        .box {
+            /* background-clip: content-box; */
+            background-color: aqua;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="menu-background" id="myElement"></div>
+            <!-- /.menu-background -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="header__inner d-flex justify-content-between align-items-center">
+                        <a href="#" class="logo">
+                            <img src="./images/header/logo.svg" alt="TealuxE">
+                        </a>
+                        <nav class="menu">
+                            <button class="menu__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- /.menu__btn -->
+                            <ul class="menu__list d-flex">
+                                <!--  -->
+                                <li class="menu__close">
+                                    <button class="menu__close-btn">
+                                        <img src="./images/header/close.svg" alt="Closed">
+                                    </button>
+                                </li>
+                                <!--  -->
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Black</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Green</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">White</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Oolong</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Pu-erh</a>
+                                </li>
+                                <!-- For media 860px -->
+                                <li class="mobile-nav">
+                                    <ul class="mobile-menu">
+                                        <li class="mobile-menu__item">
+                                            <a href="#" class="mobile__menu-link">Contact Us</a>
+                                        </li>
+                                        <li class="mobile-menu__item">
+                                            <a href="#" class="mobile__menu-link">Our Blog</a>
+                                        </li>
+                                        <li class="mobile-menu__item">
+                                            <a href="#" class="mobile__menu-link">Shipping and Delivery</a>
+                                        </li>
+                                    </ul>
+                                    <!--  -->
+                                    <ul class="mobile-actions d-flex justify-content-between align-items-center">
+                                        <li class="mobile-actions__item">
+                                            <a href="#" class="mobile-actions__link">
+                                                <img src="./images/header/cart.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="mobile-actions__item">
+                                            <a href="#" class="mobile-actions__link">
+                                                <img src="./images/header/user.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="mobile-actions__item">
+                                            <a href="#" class="mobile-actions__link">
+                                                <img src="./images/header/search.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="user-actions d-flex align-items-center">
+                            <li class="user-actions__item">
+                                <a href="#" class="user-actions__link">
+                                    <img src="./images/header/cart.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user-actions__item">
+                                <a href="#" class="user-actions__link">
+                                    <img src="./images/header/user.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user-actions__item">
+                                <a href="#" class="user-actions__link">
+                                    <img src="./images/header/search.svg" alt="">
+                                </a>
+                                <!-- If this need hide, then instead a(link) - need button (look top!) -->
+                                <!-- <search>
+                                    <form action="">
+                                        <input type="search">
+                                        <button type="submit"></button>
+                                    </form>
+                                </search> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.header__inner -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.header-top -->
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <div class="top__inner d-flex flex-column justify-content-end animate__animated animate__lightSpeedInLeft">
+                        <h1 class="top__title">A cup of tea is a moment of calm in the chaos of life</h1>
+                        <p class="top__text">Wide selection of high-quality teas from all over the world, carefully curated by tea experts.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- /.top -->
+            <blockquote class="blockquote wow animate__animated animate__fadeInLeft" data-wow-offset="300">
+                <p class="blockquote__text">"Tea is not just a drink, it's a way of life and a way to connect with our loved ones."</p>
+            </blockquote>
+            <!-- /.blockquote -->
+            <section class="assortment">
+                <div class="container">
+                    <h2 class="title assortment__title">Explore our Collections</h2>
+                    <!-- /.title assortment__title -->
+                    <ul class="assortment__list d-flex wow animate__animated animate__zoomIn" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <!-- li.assortment__item*5>img.assortment__img[src=""]+p.assortment__name{Black} -->
+                        <li class="assortment__item">
+                            <img src="./images/main/assortment/Black.png" alt="Black" class="assortment__img">
+                            <p class="assortment__name">Black</p>
+                        </li>
+                        <li class="assortment__item">
+                            <img src="./images/main/assortment/Green.png" alt="Green" class="assortment__img">
+                            <p class="assortment__name">Green</p>
+                        </li>
+                        <li class="assortment__item">
+                            <img src="./images/main/assortment/White.png" alt="White" class="assortment__img">
+                            <p class="assortment__name">White</p>
+                        </li>
+                        <li class="assortment__item">
+                            <img src="./images/main/assortment/Oolong.png" alt="Oolong" class="assortment__img">
+                            <p class="assortment__name">Oolong</p>
+                        </li>
+                        <li class="assortment__item">
+                            <img src="./images/main/assortment/Pu-erh.png" alt="Pu-erh" class="assortment__img">
+                            <p class="assortment__name">Pu-erh</p>
+                        </li>
+                    </ul>
+                    <!-- /.assotment__list -->
+                </div>
+            </section>
+            <!-- /.assortment -->
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="title">What our Clients say</h2>
+                    <!-- /.title -->
+                    <ul class="reviews__list d-flex justify-content-center">
+                        <li class="reviews__item">
+                            <blockquote>
+                                <p class="reviews__text">
+                                    "As a tea enthusiast, I have tried teas from all over the world, but this tea store truly stands out. Their teas are of the highest quality and the variety is impressive. This is definitely a tea store that every tea lover should visit."
+                                </p>
+                                <cite class="reviews__name">Alice</cite>
+                            </blockquote>
+                        </li>
+                        <li class="reviews__item">
+                            <blockquote>
+                                <p class="reviews__text">
+                                    "This tea store is my go-to for all my tea needs. Their selection is unbeatable and the quality of their teas is exceptional."
+                                </p>
+                                <cite class="reviews__name">Mad-Hatter</cite>
+                            </blockquote>
+                        </li>
+                        <li class="reviews__item">
+                            <blockquote>
+                                <p class="reviews__text">
+                                    "If you're a tea lover, you must visit this tea store. The selection is vast and the quality is outstanding. I guarantee you won't be disappointed."
+                                </p>
+                                <cite class="reviews__name">Dormouse</cite>
+                            </blockquote>
+                        </li>
+                        <li class="reviews__item reviews__item--hide">
+                            <blockquote>
+                                <p class="reviews__text">
+                                    "I am not a big tea drinker, but this tea store has converted me. I highly recommend this tea store to anyone looking for a high-quality tea experience."
+                                </p>
+                                <cite class="reviews__name">March Hare</cite>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- /.reviews -->
+            <section class="main-blog">
+                <div class="container">
+                    <h2 class="title main-blog__title">Our Tea Blog</h2>
+                    <!-- /.title main-blog__title -->
+                    <ul class="main-blog__list d-flex flex-wrap wow animate__animated animate__flipInX" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <li class="main-blog__item">
+                            <img src="./images/main/main-blog/blog-1.png" alt="Kettle" class="main-blog__item-img">
+                            <div class="main-blog__item-content">
+                                <h3 class="main-blog__item-title">Tea Time Travels: Funny Moments from Around the World</h3>
+                                <a href="#" class="main-blog__item-author">by Robinson Crusoe</a>
+                                <a href="#" class="main-blog__item-link">Read</a>
+                            </div>
+                        </li>
+                        <li class="main-blog__item">
+                            <img src="./images/main/main-blog/blog-2.png" alt="Mental Health" class="main-blog__item-img">
+                            <div class="main-blog__item-content">
+                                <h3 class="main-blog__item-title">The Role of Tea in Mental Health</h3>
+                                <a href="#" class="main-blog__item-author">by Joker</a>
+                                <a href="#" class="main-blog__item-link">Read</a>
+                            </div>
+                        </li>
+                        <li class="main-blog__item">
+                            <img src="./images/main/main-blog/blog-3.png" alt="Tea-rific Tales: Hilarious Stories from Tea Lovers" class="main-blog__item-img">
+                            <div class="main-blog__item-content">
+                                <h3 class="main-blog__item-title">Tea-rific Tales: Hilarious Stories from Tea Lovers</h3>
+                                <a href="#" class="main-blog__item-author">by Casper the Friendly Ghost</a>
+                                <a href="#" class="main-blog__item-link">Read</a>
+                            </div>
+                        </li>
+                        <li class="main-blog__item">
+                            <img src="./images/main/main-blog/blog-4.png" alt="Tea and Caffeine" class="main-blog__item-img">
+                            <div class="main-blog__item-content">
+                                <h3 class="main-blog__item-title">Tea and Caffeine: Effects on the Brain and Behavior</h3>
+                                <a href="#" class="main-blog__item-author">by Author Authorius</a>
+                                <a href="#" class="main-blog__item-link">Read</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- main-blog__list -->
+                    <a href="#" class="main-blog__link">View all</a>
+                </div>
+            </section>
+            <!-- /.main-blog -->
+            <section class="mailing-list">
+                <div class="container">
+                    <h2 class="title mailing-list__title">Want to know more?</h2>
+                    <!-- /.title mailing-list -->
+                    <div class="mailing-list__inner d-flex">
+                        <p class="mailing-list__text">
+                            Join our mailing list and stay up-to-date with the latest news, promotions, and exclusive offers from our tea store. Be the first to know about new tea arrivals, seasonal blends, and special discounts. Don't miss out on the tea-rrific perks - sign up today!
+                        </p>
+                        <!-- /.mailing-list__text -->
+                        <form action="#" method="get" class="mailing-list__form d-flex flex-wrap">
+                            <input type="email" class="mailing-list__email" placeholder="name@email.com">
+                            <button type="submit" class="mailing-list__btn">Join</button>
+                            <!--  -->
+                            <label for="inputCheckbox" class="mailing-list__label">
+                                <input type="checkbox" class="checkbox" id="inputCheckbox">
+                                <span class="checkbox-style"></span>
+                                <span class="checkbox__text">
+                                    We take your privacy seriously and are committed to protecting your personal information. By subscribing to our mailing list, you are consenting to receive periodic emails from us about our products, promotions, and other tea-related information.
+                                </span>
+                            </label>
+                        </form>
+                        <!-- /.mailing-list__form -->
+                    </div>
+                    <!-- /.mailing-list__inner -->
+                </div>
+            </section>
+            <!-- /.mailing-list -->
+            <section class="prioritise">
+                <div class="container">
+                    <h2 class="title">We Prioritise</h2>
+                    <!-- /.title -->
+                    <ul class="prioritise__list d-flex justify-content-center flex-wrap">
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Single garden teas</h4>
+                            <p class="prioritise__text">Complete transparency</p>
+                            <!-- <img src="./images/main/prioritise/prioritise-1.svg" alt="Garden teas"> -->
+                            <svg class="my-svg" width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M25.556 0.154419L25.5417 0.134399L25.5046 0.162964C11.1704 1.68677 0 13.8284 0 28.5889C0 35.1986 2.24146 41.2852 6.005 46.1282L6.005 46.1338L6.01062 46.1338C8.38977 49.2024 11.3693 51.7527 14.7668 53.6285C18.1644 55.5044 21.9086 56.6664 25.7701 57.0433C25.9044 55.6825 26.2356 54.2588 26.7324 52.8208C20.5724 52.3628 14.8202 49.5645 10.6536 44.9989C10.8107 44.3127 10.882 43.5151 10.9391 42.8232L10.9648 42.4858C11.0162 41.8569 11.0648 41.2509 11.1448 40.639C11.3446 39.1324 11.6873 38.1261 12.2212 37.5571C12.9065 36.8224 13.6089 36.6995 15.0795 36.4393L15.3451 36.3907C16.0989 36.2593 17.1068 36.0563 18.0776 35.5273C19.1143 34.9613 19.9908 34.0979 20.6504 32.8257C21.3157 31.5449 21.2672 30.2241 21.0845 29.1807C20.9182 28.3451 20.6989 27.521 20.4277 26.7134C20.3834 26.5725 20.3397 26.4315 20.2964 26.2903C19.7109 24.3806 19.6396 23.4514 20.1222 22.7167C20.6476 21.9163 21.3672 21.7333 23.2402 21.2472L23.483 21.1873C25.3848 20.6954 27.9603 19.8721 29.4508 16.6902C31.067 13.2452 30.1561 9.35999 29.1653 6.72412C28.8528 5.896 28.4973 5.08496 28.1002 4.29407C28.2516 4.28833 28.4028 4.28833 28.5542 4.28833C33.1382 4.28137 37.6294 5.58032 41.5035 8.03345C40.9553 8.76245 40.2214 9.72302 39.402 10.7494C37.603 12.9994 35.5757 15.3151 34.1937 16.3528C33.5573 16.8184 33.0741 17.4634 32.8059 18.2053C32.5752 18.8799 32.5211 19.6024 32.6489 20.3038C32.8488 21.493 33.4799 22.608 34.0396 23.46C34.5049 24.1719 35.0532 24.8894 35.5129 25.4955L35.827 25.9043C36.0925 26.2617 36.3124 26.5562 36.4752 26.8107C36.558 26.9336 36.6179 27.0336 36.658 27.1079C36.6979 27.1794 36.7122 27.2166 36.715 27.2195C36.8292 27.5339 36.952 28.0485 37.0948 28.7632L37.1576 29.0663C38.4254 28.5002 39.7988 28.0657 41.2694 27.7941C41.14 27.0959 40.9607 26.4081 40.7327 25.7357C40.4185 24.8866 39.7361 23.9746 39.2449 23.3228C39.1216 23.1605 38.9978 22.9985 38.8738 22.8368C38.4359 22.275 38.0178 21.6981 37.6202 21.1072C37.1776 20.4325 36.9635 19.9664 36.8921 19.6835C38.748 18.2483 41.0267 15.5781 42.7457 13.431C43.5909 12.3733 44.3447 11.387 44.9072 10.6322C49.6168 14.923 52.4484 20.8989 52.7882 27.2651C54.4443 27.3967 55.8721 27.614 57.0999 27.8684C56.7173 12.4133 44.0848 0 28.5542 0C27.5435 0 26.5411 0.0515137 25.556 0.154419ZM6.95581 39.6842C5.25403 36.3621 4.33948 32.692 4.28308 28.9589C4.22668 25.2257 5.02991 21.5297 6.63037 18.1573C8.23096 14.7852 10.5858 11.8274 13.5123 9.51343C16.4388 7.19946 19.8584 5.59155 23.5059 4.81433C24.1554 5.90369 24.7086 7.04785 25.1592 8.23364C26.0558 10.6207 26.4155 13.068 25.576 14.8662C24.9336 16.2328 24.0198 16.6187 22.4122 17.0332L21.9496 17.1476C20.4305 17.5164 18.0348 18.0939 16.5443 20.3582C14.8282 22.9655 15.6735 25.8214 16.2017 27.5482L16.373 28.0972C16.6014 28.8262 16.7727 29.3837 16.8641 29.9154C16.9727 30.5358 16.8927 30.7616 16.8527 30.8445C16.5671 31.3962 16.2816 31.6221 16.0304 31.7594C15.7162 31.9309 15.3051 32.0453 14.5969 32.1682C14.4827 32.191 14.3571 32.2111 14.2257 32.2311C12.9037 32.4484 10.8021 32.7943 9.09167 34.6326C7.70398 36.1191 7.19849 38.0918 6.95581 39.6842ZM28.5742 57.7638C28.7455 55.005 29.9877 51.64 32.095 48.4695C32.7773 47.3088 33.6198 46.1338 34.6249 44.9874C38.0127 41.1285 42.4885 38.3875 47.4629 37.1255C47.8306 37.0333 48.1466 36.7988 48.3416 36.4734C48.5364 36.1479 48.5942 35.7583 48.5022 35.3901C48.4102 35.022 48.1759 34.7056 47.8508 34.5104C47.5258 34.3153 47.1366 34.2573 46.7689 34.3495C41.2312 35.7532 36.2484 38.8043 32.4775 43.1006C31.7152 43.9725 31.0214 44.8788 30.4045 45.7965C30.1234 44.8511 29.9811 43.8698 29.9819 42.8833C29.9819 40.2617 31.3154 37.4142 33.4285 35.1558C35.8381 32.5889 39.0623 30.9379 42.5515 30.4843C50.5468 29.4265 55.5094 30.3127 58.4363 31.1333C58.8315 31.2441 59.1866 31.4664 59.4594 31.7737C59.7321 32.0809 59.9108 32.4602 59.9742 32.8663C60.0377 33.2725 59.9833 33.6882 59.8174 34.0642C59.6516 34.4402 59.3812 34.7605 59.0387 34.9871C58.876 35.0957 58.6133 35.3586 58.2963 35.9591C57.9219 36.7163 57.6161 37.5056 57.3826 38.3176C57.1342 39.1295 56.8972 40.0072 56.6401 40.9622L56.4746 41.5682C56.1576 42.7404 55.8064 43.9983 55.3838 45.2448C54.55 47.7091 53.3735 50.3392 51.3948 52.3577C49.3417 54.4531 46.5548 55.7596 42.8313 55.7596C39.0365 55.7596 36.3866 54.2188 34.6934 52.4463C33.5398 54.5618 32.9402 56.5544 32.8488 58.0239C32.8048 58.5842 32.5427 59.1049 32.1191 59.4738C31.6956 59.8427 31.1442 60.0302 30.5839 59.9961C30.0236 59.9619 29.4989 59.7089 29.123 59.2914C28.7472 58.8739 28.5502 58.3253 28.5742 57.7638Z" fill="#754E29" fill-opacity="1.000000" fill-rule="nonzero" />
+                                <animate attributeName="fill" values="#3F3D56;#4CAF50;#3F3D56" dur="5s" repeatCount="indefinite"/>
+                            </svg>
+
+                        </li>
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Only Loose leaf tea</h4>
+                            <p class="prioritise__text">Best Drinking Experience</p>
+                            <!-- <img src="./images/main/prioritise/prioritise-2.svg" alt="Leaf tea"> -->
+                            <svg  class="my-svg" width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector2" d="M50.8861 16.4846C50.8876 18.0046 50.6759 19.5176 50.2572 20.9803L55.1787 20.9803C57.843 20.9803 60 23.1084 60 25.7339L60 40.4622C60 44.1235 58.9542 47.7109 56.9824 50.8127C55.0107 53.9147 52.1929 56.4056 48.8519 58C45.5111 59.5944 41.7823 60.2277 38.0934 59.8271C34.4044 59.4268 30.9045 58.0088 27.995 55.7358L24.3949 59.2845C24.1864 59.5054 23.9348 59.6825 23.6553 59.8054C23.3759 59.9282 23.0741 59.9944 22.7682 59.9996C22.4623 60.005 22.1583 59.9495 21.8746 59.8364C21.5909 59.7234 21.3333 59.5551 21.1168 59.3416C20.9005 59.1282 20.73 58.8739 20.6154 58.594C20.5007 58.3141 20.4445 58.0143 20.4498 57.7124C20.4552 57.4106 20.5222 57.1129 20.6467 56.8372C20.7712 56.5615 20.9508 56.3134 21.1747 56.1075L24.7716 52.5558C23.563 51.0524 22.5864 49.3809 21.8734 47.5955C19.2247 48.1289 16.489 48.0743 13.8644 47.4359C11.2397 46.7975 8.79187 45.5912 6.69812 43.9042C4.60437 42.2173 2.91711 40.0919 1.75867 37.6823C0.60022 35.2726 -0.000610352 32.6389 0 29.9719L0 16.5265C0 14.0209 2.05969 11.9888 4.59949 11.9888L18.0972 11.9888C19.0902 8.5365 21.1976 5.49792 24.0996 3.33435C27.0016 1.17065 30.5398 0 34.1772 0L46.5114 0C48.9266 0 50.8861 1.93323 50.8861 4.31592L50.8861 16.4846ZM22.6997 12.5343C25.2213 13.1658 27.5771 14.3214 29.6095 15.9238C31.6417 17.5261 33.3037 19.5383 34.484 21.8256C36.3541 21.2637 38.2983 20.9788 40.2532 20.9803L45.4481 20.9803C46.0319 19.5515 46.3309 18.0251 46.3291 16.4846L46.3291 4.49585L34.1772 4.49585C31.6554 4.49585 29.1959 5.26953 27.1395 6.70972C25.0831 8.15002 23.5315 10.1854 22.6997 12.5343ZM31.2456 52.5288C33.5079 54.1726 36.1881 55.1652 38.988 55.396C41.788 55.627 44.5979 55.0872 47.1055 53.8367C49.613 52.5862 51.7198 50.6741 53.1918 48.3129C54.6637 45.9518 55.443 43.2341 55.443 40.4622L55.443 25.7339C55.443 25.7001 55.4363 25.6665 55.4231 25.6353C55.41 25.604 55.3907 25.5756 55.3665 25.5516C55.3423 25.5277 55.3135 25.5088 55.2817 25.4958C55.25 25.4828 55.2161 25.4762 55.1818 25.4762L40.2532 25.4762C37.4435 25.4762 34.6888 26.245 32.2955 27.6971C29.9023 29.1493 27.9642 31.2279 26.6967 33.7019C25.4292 36.1758 24.8821 38.948 25.1161 41.7103C25.3501 44.4727 26.3561 47.1168 28.0222 49.3489L40.9215 36.6257C41.1301 36.4049 41.3817 36.2278 41.6611 36.1049C41.9407 35.9821 42.2423 35.916 42.5483 35.9106C42.8542 35.9053 43.1581 35.9608 43.4418 36.0739C43.7256 36.1869 43.9833 36.3552 44.1996 36.5687C44.416 36.7821 44.5865 37.0364 44.7012 37.3163C44.8157 37.5962 44.8719 37.896 44.8666 38.1979C44.8612 38.4996 44.7942 38.7974 44.6697 39.0731C44.5452 39.3488 44.3656 39.5969 44.1417 39.8027L31.2456 52.5288ZM20.5063 40.4622C20.5063 38.6879 20.7494 36.9674 21.199 35.334L12.8203 27.0647C12.5964 26.8589 12.4169 26.6107 12.2924 26.335C12.1677 26.0592 12.1008 25.7616 12.0955 25.4597C12.09 25.158 12.1462 24.8582 12.2609 24.5782C12.3755 24.2983 12.546 24.0441 12.7625 23.8306C12.9788 23.6172 13.2365 23.4489 13.5203 23.3358C13.804 23.2228 14.1078 23.1672 14.4137 23.1726C14.7197 23.1779 15.0214 23.2439 15.3009 23.3668C15.5803 23.4896 15.8319 23.6667 16.0405 23.8877L23.0825 30.8322C24.8062 27.8497 27.2944 25.3671 30.2977 23.6329C29.1322 21.4734 27.3933 19.6674 25.2671 18.4082C23.141 17.1489 20.7076 16.484 18.2279 16.4846L4.58435 16.4846L4.56909 16.4966C4.56543 16.5011 4.56238 16.5062 4.56006 16.5116L4.55701 16.5265L4.55701 29.9719C4.55664 31.9504 4.99768 33.9048 5.84851 35.6964C6.69946 37.488 7.93945 39.073 9.48059 40.3389C11.0219 41.6049 12.8264 42.5208 14.7665 43.0217C16.7067 43.5226 18.7346 43.5963 20.7068 43.2375C20.5736 42.3182 20.5066 41.3907 20.5063 40.4622Z" fill="#754E29" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+
+                        </li>
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Customer support</h4>
+                            <p class="prioritise__text">No bots, no automated replies</p>
+                            <!-- <img src="./images/main/prioritise/prioritise-3.svg" alt="Support"> -->
+                            <svg class="my-svg" width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector3" d="M30 0C13.458 0 0 13.458 0 30L0 42.429C0 45.501 2.69092 48 6 48L9 48C9.79565 48 10.5586 47.684 11.1213 47.1213C11.6838 46.5587 12 45.7957 12 45L12 29.571C12 28.7754 11.6838 28.0123 11.1213 27.4497C10.5586 26.8871 9.79565 26.571 9 26.571L6.27588 26.571C7.94409 14.9611 17.9341 6 30 6C42.0659 6 52.0559 14.9611 53.7241 26.571L51 26.571C50.2043 26.571 49.4414 26.8871 48.8787 27.4497C48.3162 28.0123 48 28.7754 48 29.571L48 48C48 51.309 45.3091 54 42 54L36 54L36 51L24 51L24 60L42 60C48.6179 60 54 54.618 54 48C57.3091 48 60 45.501 60 42.429L60 30C60 13.458 46.542 0 30 0Z" fill="#754E29" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                        </li>
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Fast shipping</h4>
+                            <p class="prioritise__text">Save, Convenient, Reliable</p>
+                            <!-- <img src="./images/main/prioritise/prioritise-4.svg" alt="Shipping"> -->
+                            <svg class="my-svg-2" width="64.166504" height="63.291138" viewBox="0 0 64.1665 63.2911" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path class="vector" d="M32.0833 2.08337C33.2158 2.08337 34.3298 2.34692 35.3198 2.849L60.3699 15.5541C60.8892 15.8179 61.322 16.2035 61.6233 16.6713C61.9246 17.139 62.0833 17.6719 62.0833 18.2145L62.0833 43.2808C62.083 44.3663 61.7649 45.4321 61.1616 46.3677C60.5586 47.3032 59.6926 48.0745 58.6533 48.6014L35.3198 60.4421C34.3298 60.9442 33.2158 61.2078 32.0833 61.2078C30.9507 61.2078 29.8367 60.9442 28.8467 60.4421L5.51318 48.6014C4.47437 48.0747 3.60864 47.3038 3.00562 46.369C2.40259 45.434 2.08423 44.3689 2.08325 43.2838L2.08325 18.2145C2.08325 17.6719 2.24194 17.139 2.54321 16.6713C2.84448 16.2035 3.27734 15.8179 3.79663 15.5541L28.8467 2.849C29.8367 2.34692 30.9507 2.08337 32.0833 2.08337Z" stroke="#754E29" stroke-opacity="1.000000" stroke-width="4.166667" stroke-linejoin="round"/>
+                                <path class="vector" d="M2.08325 16.4254L32.0833 31.6448L62.0833 16.4254M32.0833 31.6448L32.0833 62.0835" stroke="#754E29" stroke-opacity="1.000000" stroke-width="4.166667" stroke-linejoin="round"/>
+                                <path class="vector" d="M17.0833 24.0347L47.0833 8.81531M12.0833 32.6427L22.0833 37.7321" stroke="#754E29" stroke-opacity="1.000000" stroke-width="4.166667" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                    </ul>
+                    <!-- /.prioritise__list -->
+                </div>
+            </section>
+            <!-- /.prioritise -->
+        </main>
+        <!-- /.main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <ul class="footer__products">
+                        <li class="footer__products-title">Products</li>
+                        <!-- /.footer__products-title -->
+                        <li class="footer__products-item">
+                            <a href="#" class="footer__products-link">Black tea</a>
+                        </li>
+                        <li class="footer__products-item">
+                            <a href="#" class="footer__products-link">Green tea</a>
+                        </li>
+                        <li class="footer__products-item">
+                            <a href="#" class="footer__products-link">White tea</a>
+                        </li>
+                        <li class="footer__products-item">
+                            <a href="#" class="footer__products-link">Oolong tea</a>
+                        </li>
+                        <li class="footer__products-item">
+                            <a href="#" class="footer__products-link">Pu-erh tea</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__products -->
+                    <ul class="footer__company">
+                        <li class="footer__company-title">Company</li>
+                        <!-- /.footer__company-title -->
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">About Us</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">Contact Us</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">Our Blog</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">FAQ</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">Shipping & Delivery</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">Refund policy</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="#" class="footer__company-link">Terms of Service</a>
+                        </li>
+                    </ul>
+                    <!-- /.footer__company -->
+                    <blockquote class="footer__blockquote">
+                        <p class="footer__blockquote-text">“Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility”</p>
+                        <cite class="footer__blockquote-author">Dragomir Teodorescu, <br> Tealuxe owner</cite>
+                    </blockquote>
+                    <!--  -->
+                    <div class="footer__contacts">
+                        <h5 class="footer__contacts-title">Stay In Touch</h5>
+                        <p class="footer__contacts-text">
+                            Please feel free to contact us via the email of phone. We would be happy to hear from you!
+                        </p>
+                        <!--  -->
+                        <ul class="footer__nav d-flex flex-wrap">
+                            <li class="footer__nav-logo">
+                                <a href="#" class="footer__logo">
+                                    <img src="./images/header/logo.svg" alt="Logo">
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li class="footer__nav-contacts">
+                                <a href="tel:+370680123456" class="footer__nav-phone">+370 680 123456</a>
+                                <a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a>
+                            </li>
+                            <!--  -->
+                            <li class="footer__social">
+                                <ul class="footer__social-list d-flex align-items-center">
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img src="./images/footer/facebook.svg" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img src="./images/footer/youtube.svg" alt="YouTube">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img src="./images/footer/instagram.svg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img src="./images/footer/twitter.svg" alt="Twitter">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- /.footer__nav -->
+                    </div>
+                    <!-- /.footer__contacts -->
+                </div>
+                <!-- /.footer__inner -->
+                <div class="footer__bottom d-flex">
+                    <p class="footer__copy">© Tealuxe, 2023</p>
+                    <!-- /.footer__copy -->
+                    <ul class="partners-logo d-flex align-items-center">
+                        <li class="partners-logo__item">
+                            <img src="./images/footer/partners-1.svg" alt="MasterCard">
+                        </li>
+                        <li class="partners-logo__item">
+                            <img src="./images/footer/partners-2.svg" alt="Visa">
+                        </li>
+                        <li class="partners-logo__item">
+                            <img src="./images/footer/partners-3.svg" alt="Google Pay">
+                        </li>
+                        <li class="partners-logo__item">
+                            <img src="./images/footer/partners-4.svg" alt="PayPal">
+                        </li>
+                    </ul>
+                    <!-- /.partners-logo -->
+                </div>
+                <!-- /.footer__bottom -->
+            </div>
+        </footer>
+        <!-- /.footer -->
+    </div>
+    <!-- для полного подключения JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- нужно после основного файла js ТОГДА ПЛАГИНЫ jquery РАБОТАЮТ -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</body>
+</html>
