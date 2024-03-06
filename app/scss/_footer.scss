@@ -1,0 +1,102 @@
+
+.footer {
+    padding: 100px 0 20px;
+    background-color: var(--color-line);
+    &__inner {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 40px;
+        .footer__products-title, .footer__company-title {
+            font-family: 'Cormorant', 'sans-serif';
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            margin-bottom: 50px;
+        }
+        .footer__products-item, .footer__company-item {
+            margin-bottom: 20px;
+        }
+        .footer__blockquote {
+            margin-top: 80px;
+            &-text {
+                font-size: 16px;
+                font-style: italic;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+            &-author {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        .footer__contacts {
+            &-title {
+                font-family: 'Cormorant', 'sans-serif';
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px;
+                margin-bottom: 50px;
+            }
+            &-text {
+                font-size: 13px;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+            .footer__nav {
+                &-logo {
+                    margin-right: 40px;
+                }
+                &-contacts {
+                    margin-top: 20px;
+                }
+                &-phone, &-email {
+                    font-size: 13px;
+                    line-height: 18px;
+                    position: relative;
+                    padding-left: 32px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                &-phone::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    width: 21px;
+                    height: 21px;
+                    background-image: url('../images/footer/phone.svg');
+                }
+                &-email::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 22px;
+                    height: 16px;
+                    background-image: url('../images/footer/email.svg');
+                }
+                .footer__social {
+                    margin-top: 40px;
+                    margin-left: 97px;
+                    &-list {
+                        gap: 0 20px;
+                        .footer__social-link {
+                            display: grid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        .partners-logo {
+            gap: 0 20px;
+        }
+    }
+    &__copy {
+        margin-right: 192px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

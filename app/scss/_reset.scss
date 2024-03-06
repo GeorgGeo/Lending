@@ -1,0 +1,63 @@
+//#region Reset start
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+html {
+    font-size: 18px;
+}
+body {
+    font: 300 1rem/1.5 'Open Sans', 'sans-serif';
+    min-width: 320px;
+    color: var(--color-black);
+    // font-family: 'Cormorant', serif;
+    // font-family: 'Inter', sans-serif;
+}
+//footer doing to bottom of page
+//*footer прижимаем к низу страницы
+html, body {
+    //for parents
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    //for children(header, main, footer)
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    //to expend(расширить)
+    flex-grow: 1;
+    //* if not content in main
+    //header in top, footer to bottom
+}
+//
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+img {
+    margin: auto;
+}
+input {
+    border: none;
+    outline: none;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+//#endregion Reset
